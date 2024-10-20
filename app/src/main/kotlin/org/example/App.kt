@@ -3,6 +3,8 @@
  */
 package org.example
 
+import com.google.gson.Gson
+
 class App {
     val greeting: String
         get() {
@@ -14,4 +16,6 @@ fun main() {
     println(App().greeting)
 
     println("Belajar Kotlin")
+
+    val gson = Gson()
 }
