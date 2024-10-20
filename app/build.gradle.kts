@@ -43,6 +43,15 @@ application {
     mainClass = "org.example.AppKt"
 }
 
+tasks.register("author") {
+    val author: String by project
+    val email: String by project
+
+    doLast {
+        println("Author ${author}:${email}")
+    }
+}
+
 tasks.register("helloworld") {
     doFirst{
         println("Hello")
@@ -51,6 +60,7 @@ tasks.register("helloworld") {
         println("World")
     }
 }
+
 
 tasks.named<Test>("test") {
     // Use JUnit Platform for unit tests.
