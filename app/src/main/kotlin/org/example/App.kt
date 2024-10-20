@@ -18,4 +18,7 @@ fun main() {
     println("Belajar Kotlin")
 
     val gson = Gson()
+
+    val product = Product("1","Handphone Ipun")
+    println(StringUtil.toUpper(product.name))
 }

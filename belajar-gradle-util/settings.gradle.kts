@@ -10,7 +10,5 @@ plugins {
     id("org.gradle.toolchains.foojay-resolver-convention") version "0.8.0"
 }
 
-rootProject.name = "belajar-gradle"
-include("app")
-include("belajar-gradle-model")
-include("belajar-gradle-util")
+rootProject.name = "belajar-gradle-util"
+include("lib")
